@@ -26,4 +26,12 @@ defmodule BST do
       %{value: value, left: left, right: insert(right, node_value)}
     end
   end
+
+  def delete_node(tree, node_value) do
+    if exists?(tree, node_value) do
+      delete tree, node_value
+    else
+      nil
+    end
+  end
 end
