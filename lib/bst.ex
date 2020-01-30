@@ -34,4 +34,18 @@ defmodule BST do
       nil
     end
   end
+
+  def exists?(tree, node_value) do
+    e tree, node_value
+  end
+
+  defp e(:leaf, _), do: false
+  defp e(%{value: node_value, left: _, right: _}, node_value), do: true
+  defp e(tree_node, node_value) do
+    if node_value < tree_node.value do
+      e tree_node.left, node_value
+    else
+      e tree_node.right, node_value
+    end
+  end
 end
