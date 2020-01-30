@@ -35,6 +35,21 @@ defmodule BST do
     end
   end
 
+  defp delete(tree, node_value) do
+    cond do
+    tree.value == node_value -> del(tree)
+    tree.value <  node_value ->
+    %{left: tree.left,
+      value: tree.value,
+      right: delete(tree.right, node_value)}
+      tree.value > node_value ->
+        %{left: delete(tree.left,node_value),
+          value: tree.value,
+          right: tree.right}
+    end
+  end
+
+
   def exists?(tree, node_value) do
     e tree, node_value
   end
