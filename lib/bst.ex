@@ -49,6 +49,8 @@ defmodule BST do
     end
   end
 
+  defp del(%{left: :leaf,  value: _, right: right}), do: right
+
 
   def exists?(tree, node_value) do
     e tree, node_value
