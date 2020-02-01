@@ -24,5 +24,6 @@ defmodule Queue do
     %Queue{queue|front: [item | front]}
   end
 
-
+  def pop(%Queue{}) do
+  end
 end
