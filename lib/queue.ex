@@ -27,4 +27,8 @@ defmodule Queue do
   def pop(%Queue{front: [], rear: []}) do
     :empty
   end
+
+  def pop(%Queue{front: [], rear: [item]}) do
+    {item, %Queue{front: [], rear: []}}
+  end
 end
