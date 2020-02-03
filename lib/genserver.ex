@@ -2,7 +2,7 @@ defmodule Basic do
   use GenServer
 
   def start_link do
-    GenServer.start_link(_MODULE_, "Hello")
+    GenServer.start_link(Basic, "Hello")
   end
 
   def init(initial_data) do
