@@ -1,4 +1,4 @@
-defmodule BasicThree do
+defmodule BST.BasicThree do
   use Supervisor
 
   @spec start_link :: :ignore | {:error, any} | {:ok, pid}

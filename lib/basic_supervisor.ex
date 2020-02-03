@@ -1,8 +1,8 @@
-defmodule BasicSupervisor do
+defmodule BST.BasicSupervisor do
   use Supervisor
-  alias BasicOne
-  alias BasicTwo
-  alias BasicThree
+  alias BST.BasicOne
+  alias BST.BasicTwo
+  alias BST.BasicThree
 
   @spec start_link :: :ignore | {:error, any} | {:ok, pid}
   def start_link do
@@ -10,7 +10,6 @@ defmodule BasicSupervisor do
   GenServer.start_link(__MODULE__, [])
   end
 
-  @spec init([]) :: {:ok, {{any, any, any}, any}}
   def init([]) do
     children = [
       worker(BasicOne, []),

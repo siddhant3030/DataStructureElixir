@@ -1,4 +1,4 @@
-defmodule BasicTwo do
+defmodule BST.BasicTwo do
   use Supervisor
 
   @spec start_link :: :ignore | {:error, any} | {:ok, pid}
