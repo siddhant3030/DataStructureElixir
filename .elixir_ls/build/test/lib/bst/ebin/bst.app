@@ -3,8 +3,9 @@
               {description,"bst"},
               {modules,['Elixir.BST','Elixir.BST.BasicOne',
                         'Elixir.BST.BasicSupervisor','Elixir.BST.BasicThree',
-                        'Elixir.BST.BasicTwo','Elixir.Binary','Elixir.Books',
-                        'Elixir.PackageReceiver','Elixir.Queue',
-                        'Elixir.Stack']},
+                        'Elixir.BST.BasicTwo',
+                        'Elixir.BST.PostalCode.DataParser','Elixir.Binary',
+                        'Elixir.Books','Elixir.PackageReceiver',
+                        'Elixir.Queue','Elixir.Stack']},
               {registered,[]},
               {vsn,"0.1.0"}]}.
