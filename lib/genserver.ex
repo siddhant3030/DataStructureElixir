@@ -2,11 +2,12 @@ defmodule Basic do
   use GenServer
 
   def start_link do
-    GenServer.start_link(Basic, [])
+    GenServer.start_link(_MODULE_, "Hello")
   end
 
   def init(initial_data) do
     IO.puts "I am being called"
-    {:ok, initial_data}
+    greetings = %{:greeting => initial_data}
+    {:ok, greetings}
   end
 end
