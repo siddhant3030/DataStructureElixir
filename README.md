@@ -19,3 +19,14 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/bst](https://hexdocs.pm/bst).
 
+
+##Application: -
+
+- Location Information
+  1. distance
+  2. optimal routes
+  3. %{"postal code" => {lat, long}}
+- Geolocation Data store
+- Geolocation lookup service
+
+
