@@ -1,6 +1,6 @@
-defmodule BST.BasicSupervisor do
+defmodule Elixir.BST.BasicSupervisor do
   use Supervisor
-  alias BST.BasicOne
+  alias Elixir.BST.BasicOne
   alias BST.BasicTwo
   alias BST.BasicThree
 

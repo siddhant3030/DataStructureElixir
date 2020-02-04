@@ -1,4 +1,4 @@
-defmodule BST.BasicOne do
+defmodule Elixir.BST.BasicOne do
   use Supervisor
 
   @spec start_link :: :ignore | {:error, any} | {:ok, pid}
