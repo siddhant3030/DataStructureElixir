@@ -10,7 +10,7 @@ defmodule Stack do
   end
 
   def push(stack, item) do
-    [item | stack]
+    [stack | item]
   end
 
 end
