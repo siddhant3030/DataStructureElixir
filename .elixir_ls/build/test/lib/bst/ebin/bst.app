@@ -3,7 +3,7 @@
               {description,"bst"},
               {modules,['Elixir.BST','Elixir.BST.BasicOne',
                         'Elixir.BST.BasicSupervisor','Elixir.BST.BasicThree',
-                        'Elixir.BST.BasicTwo',
+                        'Elixir.BST.BasicTwo','Elixir.BST.M',
                         'Elixir.BST.PostalCode.DataParser','Elixir.Binary',
                         'Elixir.Books','Elixir.NaiveList',
                         'Elixir.PackageReceiver','Elixir.Queue',
