@@ -27,5 +27,3 @@ defmodule BST.Solution do
       |> Enum.each(fn a -> IO.puts a end)
   end
 end
-
-Solution.main()
