@@ -46,6 +46,22 @@ class Stack{
             }
 
         }
+
+        int pop(int val)
+        {
+            if(isEmpty)
+            {
+                cout<<"stack underflow"<<endl;
+                return 0;
+            }
+            else
+            {
+                int popValue = arr[top];
+                arr[top] = 0;
+                top--;
+                return popValue;
+            }
+        }
 };
 
 int main()
