@@ -1,11 +1,13 @@
 defmodule BST.K do
   @spec main :: :ok
   def main do
-    data_stuff()
+    do_stuff()
   end
 
-  def data_stuff do
-    # my_int = 123
-    IO.puts "Atom is #{is_atom(:sid)}"
+  def do_stuff do
+    my_str = "siddhant"
+    IO.puts "Length : #{String.length(my_str)}"
+    longer_str = my_str <> " " <> "is longer"
+    IO.puts "Equal : #{"Egg" === "egg"}"
   end
 end
